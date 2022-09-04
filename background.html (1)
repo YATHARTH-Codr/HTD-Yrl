@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&amp;display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8"> 
+  <meta name="author" content="Yatharth Ladkat"> 
+  <meta name="description" content="Just testing a few things here"> 
+  <title>Gradient&amp;Text</title> 
+  <link rel="stylesheet" href=".css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+  background: linear-gradient(125deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+p {
+    font-family: sans serif;
+   font-size: 25px;
+   text-align: center;
+   text-decoration: none;
+   margin-left: 25px;
+   margin-right: 25px;
+   padding: 15px;
+   border: dashed 4px #0c9b15;
+   background-color: #7fff83;
+   color: #0c9b15;
+}
+
+button {
+    font-family: sans serif;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin-right: 55px;
+   margin-left: 25px;
+   padding: 15px;
+   background-color: #ff7ff2;
+   color: #af0dad;
+}
+
+h1 {
+   font-family: sans serif;
+   font-size: 50px;
+   text-align: center;
+   text-decoration: none;
+   margin-right: 25px;
+   margin-left: 25px;
+   padding: 15px;
+   color: #0083ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pad: clamp(1rem, 1vw, 3rem);
+}
+
+body {
+  margin: 0;
+  padding: var(--pad);
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #1B1D2E;
+}
+
+h1 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(3rem, 45vmin, 18rem);
+  letter-spacing: 0.04em;
+  margin: 0;
+  color: deeppink;
+  -webkit-text-stroke-width: 0.045em;
+  -webkit-text-stroke-color: #1B1D2E;
+  transform: skew(-10deg);
+  display: flex;
+}
+
+h1 span {
+  --t: 0.17em;
+  display: block;
+  text-shadow: 
+    0 0 darkorchid,
+    0 0 orange,
+    0 0 deeppink,
+    0 0 darkorchid,
+    0 0 turquoise;
+  animation: animate 1800ms forwards var(--delay, 0ms);
+  transform: translate3d(var(--t), var(--t), 0);
+}
+
+h1 span:nth-child(2) {
+  --delay: 300ms;
+}
+
+h1 span:nth-child(3) {
+  --delay: 600ms;
+}
+h1 span:nth-child(4){
+  --delay:900ms;
+}
+h1 span:nth-child(5) {
+  --delay: 1200ms;
+}
+
+@keyframes animate {
+  to {
+    --t: -0.17em;
+    text-shadow: 
+    0.05em 0.05em darkorchid,
+    0.08em 0.08em orange,
+    0.11em 0.11em deeppink,
+    0.14em 0.14em darkorchid,
+    0.17em 0.17em turquoise;
+    transform: translate3d(var(--t), var(--t), 0);
+  }
+}</style></head> 
+ <body> 
+  <h1> <span>H </span> <span>A</span> <span>P</span> <span>P</span> <span>Y</span> </h1> <!-- partial --> 
+  <h1> <span>T </span> <span>E</span> <span>A</span> <span>C</span> <span>H</span><span>E</span> <span>R</span> <span>S</span> </h1> 
+  <h1><span>D</span> <span>A</span> <span>Y</span> <span>🌹</span> </h1> <!-- partial --> 
+  <h1 style="font-size:75px" id="header" onclick="header()"> <b>🎁Touch Here</b></h1>
+ <h2 style="color:red;"><b>A Poem for You:</b></h2>
+ <p><b>"</b>Teachers are dedicated,
+to our education.
+This is their passion,
+and our liberation.</p>
+<p>
+Their sincere kindness,
+warm feelings, it brings.
+They guide and protect us,
+under their wings.</p>
+<p>
+They show us patience,
+and readily spread.
+Their helpful advice,
+fills us like bread.</p>
+<p>
+They don't just instruct,
+but encourage and believe,
+That there's nothing out there,
+we cannot achieve.</p>
+<p>
+They think about,
+our future all the time.
+Work tirelessly to direct us,
+away from conflicts and crime.</p>
+<p>
+At the end of the day,
+teachers do understand.
+It takes both tools and love,
+For our young minds to expand.<b>"</b></p>
+  <marquee><h2 align="center" style="border:5px solid red;background-color:yellow">This web is created by <b>Yatharth Ravindra Ladkat ( Class 9 A2)</b></h2> </marquee>  <script src=".js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">function header() {
+document.getElementById("header").innerHTML = "Wishing you joy and happiness, you are an amazing teacher, and you only deserve the best. ";
+}</script></body></html>
